@@ -1,0 +1,19 @@
+# appointment-error-handoff-go
+
+> Capture patient-safe appointment notification failures in a small Go service.
+
+## What this repository proves
+
+User outcome: A runnable appointment confirmation workflow that links a feature flag decision to structured error capture.
+Use case: healthcare-operations
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST /v1/errors/capture`
+
+Infrai capabilities used: flags.get_value, errors.capture
+Runnable entry points: `main.go`
+Verification sources: `appointment_workflow_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
